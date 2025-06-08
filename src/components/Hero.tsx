@@ -25,7 +25,8 @@ const Hero = () => {
                 automation, and modern development practices.
               </p>
               <p className="text-lg text-slate-400">
-                🎯 Actively seeking DevOps/Cloud internship opportunities
+                🎯 Actively seeking DevOps/Infrastructure internship
+                opportunities
               </p>
             </div>
 
@@ -49,7 +50,7 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                   <img
-                    src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src="src\img\slika.jpg"
                     alt="Nikola Miletić"
                     className="w-72 h-72 rounded-full object-cover"
                   />

@@ -59,7 +59,7 @@ const About = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-6"></div>
           <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-            Passionate Computer Science student eager to apply academic
+            Passionate Software Engineering student eager to apply academic
             knowledge in real-world DevOps environments
           </p>
         </div>
