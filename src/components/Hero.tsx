@@ -50,8 +50,8 @@ const Hero = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                   <img
-                    src="src\img\slika.jpg"
-                    alt="Nikola Miletić"
+                    src="/img/slika.jpg"
+                    alt="slika"
                     className="w-72 h-72 rounded-full object-cover"
                   />
                 </div>
