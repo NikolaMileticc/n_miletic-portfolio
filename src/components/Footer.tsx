@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heart, GraduationCap } from 'lucide-react';
+import React from "react";
+import { Heart, GraduationCap } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,18 +9,21 @@ const Footer = () => {
           <div className="text-slate-400 mb-4 md:mb-0">
             © 2024 Nikola Miletić. All rights reserved.
           </div>
-          
+
           <div className="flex items-center gap-2 text-slate-400">
             <span>Made with</span>
             <Heart className="text-red-400 fill-current" size={16} />
-            <span>by a passionate CS student</span>
+            <span>by a passionate SWE student</span>
           </div>
         </div>
-        
+
         <div className="mt-4 pt-4 border-t border-slate-800 text-center text-slate-500 text-sm">
           <div className="flex items-center justify-center gap-2">
             <GraduationCap size={16} />
-            <p>Computer Science Student | DevOps Enthusiast | Seeking Internship Opportunities</p>
+            <p>
+              Software Engineering Student | DevOps Enthusiast | Seeking
+              Internship Opportunities
+            </p>
           </div>
         </div>
       </div>

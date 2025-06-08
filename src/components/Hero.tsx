@@ -51,7 +51,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                   <img
                     src="/img/slika.jpg"
-                    alt="slika"
+                    alt="Nikola Miletic"
                     className="w-72 h-72 rounded-full object-cover"
                   />
                 </div>
