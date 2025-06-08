@@ -1,0 +1,17 @@
+name: validation
+
+description: Run validations
+runs:
+  using: "composite"
+  steps:
+    - name: Run Lint
+      shell: bash
+      run: npm run lint
+
+    - name: typecheck
+      shell: bash
+      run: npm run typecheck
+
+    - name: spellcheck
+      shell: bash
+      run: npm run spellcheck
