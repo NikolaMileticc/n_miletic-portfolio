@@ -15,8 +15,8 @@ const About = () => {
     {
       icon: <GraduationCap size={24} />,
       title: "4th Year",
-      subtitle: "Computer Science",
-      description: "Expected graduation 2025",
+      subtitle: "Software Engineering",
+      description: "Expected graduation 2026",
     },
     {
       icon: <BookOpen size={24} />,
@@ -92,7 +92,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  I'm a fourth-year Computer Science student with a growing
+                  I'm a fourth-year Software Engineering student with a growing
                   passion for DevOps and cloud technologies. Through coursework
                   and personal projects, I've developed a strong foundation in
                   software development and system administration.

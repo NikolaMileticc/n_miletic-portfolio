@@ -1,80 +1,97 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send, Calendar, FileText } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
+  Twitter,
+  Send,
+  Calendar,
+  FileText,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   const contactInfo = [
     {
       icon: <Mail size={20} />,
-      label: 'Email',
-      value: 'nikola.miletic@student.edu',
-      href: 'mailto:nikola.miletic@student.edu'
+      label: "Email",
+      value: "nikola.miletic997@gmail.com",
+      href: "mailto:nikola.miletic997@gmail.com",
     },
     {
       icon: <Phone size={20} />,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      label: "Phone",
+      value: "+1 (555) 123-4567",
+      href: "tel:+15551234567",
     },
     {
       icon: <MapPin size={20} />,
-      label: 'Location',
-      value: 'University City, CA',
-      href: '#'
-    }
+      label: "Location",
+      value: "Novi Sad , Serbia",
+      href: "#",
+    },
   ];
 
   const socialLinks = [
     {
       icon: <Linkedin size={24} />,
-      href: 'https://linkedin.com/in/nikola-miletic-student',
-      label: 'LinkedIn'
+      href: "https://linkedin.com/in/nikola-miletic-student",
+      label: "LinkedIn",
     },
     {
       icon: <Github size={24} />,
-      href: 'https://github.com/nikola-miletic',
-      label: 'GitHub'
+      href: "https://github.com/NikolaMileticc",
+      label: "GitHub",
     },
     {
       icon: <Twitter size={24} />,
-      href: 'https://twitter.com/nikola_miletic',
-      label: 'Twitter'
-    }
+      href: "https://twitter.com/nikola_miletic",
+      label: "Twitter",
+    },
   ];
 
   return (
     <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Let's Connect
+          </h2>
           <p className="text-slate-300 max-w-2xl mx-auto">
-            Interested in discussing internship opportunities or just want to connect? I'd love to hear from you!
+            Interested in discussing internship opportunities or just want to
+            connect? I'd love to hear from you!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Contact Information
+              </h3>
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
@@ -87,7 +104,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-slate-300 text-sm">{info.label}</div>
-                      <div className="text-white font-semibold">{info.value}</div>
+                      <div className="text-white font-semibold">
+                        {info.value}
+                      </div>
                     </div>
                   </a>
                 ))}
@@ -95,7 +114,9 @@ const Contact = () => {
             </div>
 
             <div>
-              <h4 className="text-xl font-semibold text-white mb-4">Connect With Me</h4>
+              <h4 className="text-xl font-semibold text-white mb-4">
+                Connect With Me
+              </h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -118,12 +139,23 @@ const Contact = () => {
                 Internship Availability
               </h4>
               <p className="text-slate-300 mb-4">
-                Available for summer 2025 internships and part-time opportunities during the academic year. Open to remote, hybrid, or on-site positions.
+                Available for summer 2025 internships and part-time
+                opportunities during the academic year. Open to remote, hybrid,
+                or on-site positions.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">Summer 2025</span>
-                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Part-time</span>
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">Remote Friendly</span>
+                <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm">
+                  Summer 2025
+                </span>
+                <span className="px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-sm">
+                  Full-time
+                </span>
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">
+                  Part-time
+                </span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm">
+                  Remote Friendly
+                </span>
               </div>
             </div>
 
@@ -145,7 +177,10 @@ const Contact = () => {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-slate-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -161,7 +196,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-slate-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -177,7 +215,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-slate-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -193,7 +234,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-slate-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea

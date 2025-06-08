@@ -1,5 +1,5 @@
-import React from 'react';
-import { Download, Mail, GraduationCap } from 'lucide-react';
+import React from "react";
+import { Download, Mail, GraduationCap } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -10,7 +10,9 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <GraduationCap className="text-cyan-400" size={32} />
-                <span className="text-cyan-400 font-semibold">Computer Science Student</span>
+                <span className="text-cyan-400 font-semibold">
+                  Software Engineering Student
+                </span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold">
                 <span className="text-white">Nikola Miletić</span>
@@ -18,7 +20,7 @@ const Hero = () => {
                 <span className="text-cyan-400">DevOps Enthusiast</span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Fourth-year CS student passionate about cloud infrastructure,
+                Fourth-year SWE student passionate about cloud infrastructure,
                 <br />
                 automation, and modern development practices.
               </p>
@@ -26,9 +28,9 @@ const Hero = () => {
                 🎯 Actively seeking DevOps/Cloud internship opportunities
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
+              <a
                 href="#contact"
                 className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center gap-2"
               >
