@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "spellcheck": "cspell '**/*.{ts,tsx,js,jsx,json,md}'"
+    "spellcheck": "cspell \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
   "dependencies": {
     "husky": "^9.1.7",
